@@ -1,0 +1,2 @@
+OCaml bindings for SDL2
+OCamlSDL2 relays function calls from OCaml to the C SDL2 library.

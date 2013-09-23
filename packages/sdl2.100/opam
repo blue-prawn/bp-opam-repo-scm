@@ -1,0 +1,17 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  ["cp" "src/Makefile.config.linux" "src/Makefile.config"] { "%{os}%" != "win32" }
+  ["cp" "src/Makefile.config.cygwin" "src/Makefile.config"] { "%{os}%" = "win32" }
+
+  [make "-C" "src" "gen"]
+  [make "-C" "src" "dep"]
+  [make "-C" "src" "opt"]
+  [make "-C" "src" "byte"]
+  [make "-C" "src" "findinstall"]
+]
+
+homepage: "https://github.com/blue-prawn/OCamlSDL2"
+authors: ["Florent Monnier"]
+license: "restrictionless Zlib"
