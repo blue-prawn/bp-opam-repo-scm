@@ -1,0 +1,15 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "-C" "src" "all"]
+  [make "-C" "src" "install" "PREFIX=%{prefix}%/ode"]
+]
+
+homepage: "http://www.linux-nantes.org/%7Efmonnier/OCaml/ODE/"
+(* project: "https://github.com/blue-prawn/OCamlODE" *)
+authors: [
+  "Richard W.M. Jones"
+  "Florent Monnier"
+]
+license: "Zlib"

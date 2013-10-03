@@ -1,0 +1,4 @@
+Bindings for ODE (Open Dynamics Engine)
+
+OCamlODE provides a set of low-level bindings for calling functions from
+the ODE library.
