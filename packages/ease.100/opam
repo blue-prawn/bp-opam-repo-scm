@@ -1,0 +1,19 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "-C" "src-int" "lib" "opt"]
+  [make "-C" "src-int" "findinstall"]
+
+  [make "-C" "src-float" "lib" "opt"]
+  [make "-C" "src-float" "findinstall"]
+]
+remove: [
+  ["ocamlfind" "remove" "iease"]
+  ["ocamlfind" "remove" "fease"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://www.linux-nantes.org/~fmonnier/ocaml/easing/"
+authors: ["Florent Monnier"]
+license: "restrictionless Zlib"

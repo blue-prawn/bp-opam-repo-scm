@@ -1,0 +1,5 @@
+A small library providing easing functions.
+
+2 implementations are provided:
+- with floats that is the most used
+- with ints for deterministic results
