@@ -2,8 +2,8 @@ opam-version: "1"
 maintainer: "blue-prawn"
 
 build: [
-  ["cp" "src/Makefile.config.linux" "src/Makefile.config"] { "%{os}%" != "win32" }
-  ["cp" "src/Makefile.config.cygwin" "src/Makefile.config"] { "%{os}%" = "win32" }
+  ["cp" "src/Makefile.config.unix" "src/Makefile.config"] { "%{os}%" != "win32" }
+  ["cp" "src/Makefile.config.win32" "src/Makefile.config"] { "%{os}%" = "win32" }
 
   [make "-C" "src" "gen"]
   [make "-C" "src" "dep"]
