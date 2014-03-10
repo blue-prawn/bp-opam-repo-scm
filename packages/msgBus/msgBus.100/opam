@@ -1,0 +1,16 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "lib"]
+  [make "opt"]
+  [make "findinstall"]
+]
+remove: [
+  ["ocamlfind" "remove" "msgBus"]
+]
+depends: ["ocamlfind"]
+
+homepage: "http://www.linux-nantes.org/~fmonnier/ocaml/msgBus/"
+authors: ["Florent Monnier"]
+license: "restrictionless Zlib"
