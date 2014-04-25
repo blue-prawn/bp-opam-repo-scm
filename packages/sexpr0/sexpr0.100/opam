@@ -1,0 +1,11 @@
+opam-version: "1"
+maintainer: "blue-prawn"
+
+build: [
+  [make "-f" "SExpr.mk"]
+  [make "-f" "SExpr.mk" "SExpr.cmx"]
+]
+
+homepage: "https://github.com/blue-prawn/ocaml-sexpr0"
+authors: ["Florent Monnier"]
+license: "restrictionless Zlib"
